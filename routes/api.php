@@ -22,5 +22,5 @@ Route::prefix('personas')->group(function(){
 
 	Route::post('/editar/{id}',[PersonasController::class,'editar']);
 	Route::get('/listar',[PersonasController::class,'listar']);
-	Route::get('/ver',[PersonasController::class,'ver']);
+	Route::get('/ver/{id}',[PersonasController::class,'ver']);
 });
